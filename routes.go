@@ -10,10 +10,10 @@ func getRoutes() chi.Router {
 
 	r := chi.NewRouter()
 	r.Get("/", controllerlanding)
-	r.get("/welcome", controllerwelcome)
-	r.get("/what_to_expect", controllerexpect)
-	r.get("/meet_the_team", controllermeet)
-	r.get("/contact", controllercontact)
+	r.Get("/welcome", controllerwelcome)
+	r.Get("/what_to_expect", controllerexpect)
+	r.Get("/meet_the_team", controllermeet)
+	r.Get("/contact", controllercontact)
 	addStaticFileServer(r, "/static/", "staticfiles")
 	return r
 }
