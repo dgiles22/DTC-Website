@@ -1,0 +1,60 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="/static/pure-min.css">
+        <link rel="stylesheet" href="/static/grids-responsive-min.css">
+        <link rel="stylesheet" href="/static/DG_bootstrap.css">
+        
+        <title>{{template "title" .}}</title>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151441243-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151441243-1');
+        </script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="pure-menu pure-menu-horizontal pure-menu-fixed">
+            <a class="pure-menu-heading"><img id="logo" src="/static/company_logo.png" alt="Logo" height="40"></a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="/" class="pure-menu-link-head">Home</a></li>
+                <li class="pure-menu-item"><a href="/events/new" class="pure-menu-link-head">Create Event</a></li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a id="menuLink1" class="pure-menu-link-head">View Reports</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="/reports/1" class="pure-menu-link-head">Report #1</a></li>
+                        <li class="pure-menu-item"><a href="/reports/2" class="pure-menu-link-head">Report #2</a></li>
+                        <li class="pure-menu-item"><a href="/reports/3" class="pure-menu-link-head">Report #3</a></li>
+                        <li class="pure-menu-item"><a href="/reports/final" class="pure-menu-link-head">Final Report</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item"><a href="/about" class="pure-menu-link-head">About</a></li>
+            </ul>
+        </div>
+        </header>
+        <div>
+            {{template "content" .}}
+        </div>
+        <footer> 
+
+        <div class="footer l-box is-center">
+            <div class="pure-menu pure-menu-horizontal">
+                <ul>
+                    <li class="pure-menu-item"><a href="/" class="pure-menu-link-foot">Home</a></li>
+                    <li class="pure-menu-item"><a href="/about" class="pure-menu-link-foot">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        </footer>
+    </body>
+</html>
+{{end}}
