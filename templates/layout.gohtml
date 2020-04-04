@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <link rel="stylesheet" href="/static/css/base.css">
-        <link rel="stylesheet" href="/static/css/pure.css">
-        <link rel="stylesheet" href="/static/css/marketing.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/pure.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/DG-mod.css">
         
         <title>{{template "title" .}}</title>
         
@@ -14,15 +14,16 @@
 
     <body>
         <header>
-            <div class="pure-menu pure-menu-horizontal pure-menu-fixed">
-            <a class="pure-menu-heading"><img id="logo" src="/static/logos/DTC_White.png" alt="Logo" height="40"></a>
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="/welcome" class="pure-menu-link-head">Welcome</a></li>
-                <li class="pure-menu-item"><a href="/what_to_expect" class="pure-menu-link-head">What to Expect</a></li>
-                <li class="pure-menu-item"><a href="/meet_the_team" class="pure-menu-link-head">Meet the Team</a></li>
-                <li class="pure-menu-item"><a href="/contact" class="pure-menu-link-head">Contact</a></li>
-            </ul>
-        </div>
+            <div class="pure-menu pure-menu-horizontal pure-menu-fixed banner-bucket">
+                <a class="pure-menu-heading"><img id="logo" src="/static/logos/DTC_White.png" alt="Logo" height="80"></a>
+                <a class="pure-menu-heading">Legacy. Leadership. Liquidity.</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="/welcome">Welcome</a></li>
+                    <li class="pure-menu-item"><a href="/what_to_expect">What to Expect</a></li>
+                    <li class="pure-menu-item"><a href="/meet_the_team">Meet the Team</a></li>
+                    <li class="pure-menu-item"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
         </header>
         <div>
             {{template "content" .}}
