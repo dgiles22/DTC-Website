@@ -5,5 +5,7 @@
     background:#233A73 ;
     color: white;
   }
-
+ .circle {
+    border-radius: 50%;
+  }
   

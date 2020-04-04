@@ -1403,6 +1403,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .pure-menu-heading {
     text-transform: uppercase;
     color: white;
+    font-size: 16px;
 }
 
 .pure-menu-link {
