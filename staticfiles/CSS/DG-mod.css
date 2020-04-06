@@ -2,10 +2,18 @@
  * Address inconsistent and variable font size in all browsers.
  */
  .banner-bucket {
-    background:#233A73 ;
+    background:#6699CC ;
     color: white;
   }
  .circle {
     border-radius: 50%;
   }
-  
+  .light-blue-back {
+    background:#6699CC
+  }
+  .dark-blue-back {
+    background:#233A73;
+  }
+  .yellow-back {
+    background: #ffdf00
+  }
