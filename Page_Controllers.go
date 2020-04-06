@@ -19,6 +19,11 @@ func controllerexpect(w http.ResponseWriter, r *http.Request) {
 	tmpl["what_to_expect"].Execute(w, nil)
 }
 
+func controllercriteria(w http.ResponseWriter, r *http.Request) {
+
+	tmpl["investment_criteria"].Execute(w, nil)
+}
+
 func controllermeet(w http.ResponseWriter, r *http.Request) {
 
 	tmpl["meet_the_team"].Execute(w, nil)
